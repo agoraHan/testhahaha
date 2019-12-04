@@ -2,7 +2,7 @@ import ffmpeg
 import subprocess
 
 def get_video_info(test_dir):
-    cmd = 'find %s -name "*.mp4"' % test_dir
+    cmd = 'find %s -name "*merge_av.mp4"' % test_dir
     lists = subprocess.getoutput(cmd)
     video_url = lists.split('\n')[0]
     # print(video_url)
